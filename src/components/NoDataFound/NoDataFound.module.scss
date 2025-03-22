@@ -1,0 +1,22 @@
+@import "../../styles/colors.scss";
+.no-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: $primary;
+}
+
+.no-data-icon {
+  font-size: 3rem;
+  color: $primary;
+  margin-bottom: 1rem;
+}
+
+.no-data-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $primary;
+}

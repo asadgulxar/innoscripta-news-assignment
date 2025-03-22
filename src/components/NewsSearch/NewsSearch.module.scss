@@ -1,0 +1,36 @@
+@import "../../styles/colors.scss";
+
+.news-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px;
+  border: 1px solid $primary;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: white;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:focus-within {
+    box-shadow: 0 0 8px rgba($primary, 0.5);
+  }
+
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    background-color: transparent;
+    color: black;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+    padding: 6px;
+  }
+}
